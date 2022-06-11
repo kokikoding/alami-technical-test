@@ -21,7 +21,9 @@ const Home: React.FC<HomePropsType> = ({navigation}) => (
             <Text style={styles.buttonText}>Test No. 1</Text>
           </View>
         </Button>
-        <Button onPress={() => console.log('2')} style={styles.buttonStyle}>
+        <Button
+          onPress={() => navigation.navigate('TestCaseTwo')}
+          style={styles.buttonStyle}>
           <View style={styles.buttonView}>
             <Text style={styles.buttonText}>Test No. 2</Text>
           </View>
