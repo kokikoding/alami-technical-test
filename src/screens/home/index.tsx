@@ -28,7 +28,9 @@ const Home: React.FC<HomePropsType> = ({navigation}) => (
             <Text style={styles.buttonText}>Test No. 2</Text>
           </View>
         </Button>
-        <Button onPress={() => console.log('3')} style={styles.buttonStyle}>
+        <Button
+          onPress={() => navigation.navigate('TestCaseThree')}
+          style={styles.buttonStyle}>
           <View style={styles.buttonView}>
             <Text style={styles.buttonText}>Test No. 3</Text>
           </View>
